@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Eventia</title>
+
+	<!--== BOOTSTRAP CSS == -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
+	<!--== CUSTOM CSS ==-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarresponsive">
+	<header id="navarea">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-sm-12 col-12">
+					<nav id="navigation" class="navbar navbar-expand-lg fixed-top overlay">
+						<a class="navbar-brand" href="#">
+							<img src="images/brand.png" alt="">
+						</a>
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponsive">
+							<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarresponsive">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item ">
+									<a class="nav-link" href="#main_hero_area">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#explore">Explore</a>
+								</li>
+								<li class="nav-item ">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#speaker">Speaker</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#pertners">Pertner</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#owl_carousel_recent">Pages</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#register">Register</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<!-- main hero -->
+					<div id="main_hero_area">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="hero-area-left wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s" >
+									<h3>Europe’s Largest Event Summit</h3>
+									<h1 >2018 <span>Aseees EVENT</span></h1>
+									<p>The preliminary program for the 2016 ASEEES Annual Convention is now available.</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="hero-area-right wow slideInRight">
+									<div class="timer_wrapper">
+										<div class="coundown">
+											<div class="coundown_box">
+												<div id="down">
+													<div id="day"></div>
+													<div id="hours"></div>
+													<div id="minutes"></div>
+													<div id="seconds"></div>
+												</div>
+												<script>
+													var dest = new Date("jul 26, 2020 08:00").getTime();
+
+													var x = setInterval(function() {
+
+														var now = new Date().getTime();
+
+														var diff = dest - now;
+
+														var days = Math.floor(diff / (1000* 60*60*24));
+														console.log(days);
+
+
+														var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+														console.log(hours);
+
+
+														var minutes = Math.floor((diff % (1000 *60 * 60)) / (1000 * 60));
+														console.log(minutes);
+														if (minutes < 10){
+															minutes = '0' + minutes;
+														}
+
+
+														var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+														console.log(seconds);
+														if (seconds < 10){
+															seconds = '0' + seconds;
+														}
+
+														document.getElementById("day").innerHTML =days+"<br>"+"<span>days</span>" ;
+														document.getElementById("hours").innerHTML =hours+"<br>"+"<span>hours</span>";
+														document.getElementById("minutes").innerHTML =minutes+"<br>"+"<span>minutes</span>";
+														document.getElementById("seconds").innerHTML =seconds+"<br>"+"<span>seconds</span>";
+													}, 1000 );
+												</script>
+											</div>
+										</div>
+									</div>
+									<div class="user_info_innner">
+										<div class="row justify-content-center">
+											<div class="col-md-6 p-0">
+												<div class="user_info">
+													<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+													</svg>
+													<span>Seats <span>300 people</span></span>
+												</div>
+											</div>
+											<div class="col-md-6 p-0">
+												<div class="guest_info">
+													<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+													</svg>
+													<span>Speak <span>16 Prof</span></span>
+												</div>
+											</div>
+										</div>
+										<div class="title_sponsor">
+											<h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">Title sponsor</h3>
+											<h2 class="wow rollIn" data-wow-delay="1s">mailchimp</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- main hero -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- explore start -->
+	<section id="explore" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="explore_box wow bounceInUp">
+						<h2>To Explore Business Event Get Ready With More Than <span>10000</span> People.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ue velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<a href="#">Explore it now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+							<path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+							<path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+						</svg></a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="video_box bg-dark " style="height: 100%;width: 100%;" >
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- explore end -->
+	<!-- about section start -->
+	<section id="about" class="section offset">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="about_heading text-center">
+						<h2 class="wow rollIn">About This Event</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ue velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="single_img_box wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+								<img src="images/dogs.jpeg" alt="" class="img-fluid">
+								<h4>Didn't Make It To Convocation 2016?</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ue velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<a href="#">Find it now<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+									<path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+									<path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+								</svg></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="single_img_box  wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+								<img src="images/square-item.jpeg" alt="" class="img-fluid">
+								<h4>Didn't Make It To Convocation 2016?</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ue velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<a href="#">Find it now<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+									<path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+									<path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+								</svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- about section end -->
+	<!-- speaker section start -->
+	<section id="speaker" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="speaker_title text-center">
+						<h2 class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">Speaker</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box " >
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box">
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box">
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box">
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box">
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="founder_box text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
+								<div class="single_founder_box">
+									<img src="images/founder.jpg" alt="" class="img-fluid">
+									<div class="imageOverlay"></div>
+									<div class="socialICon">
+										<a href="https://www.facebook.com/prodip.udoy.1"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://twitter.com/Prodipudoy"><i class="fab fa-twitter"></i></a>
+										<a href="https://github.com/prodipudoy"><i class="fab fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/prodipudoy/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<h4>Prodip udoy</h4>
+								<p>founder</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- speaker section end -->	
+	<!-- event section start -->
+	<section id="largest_event" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center">
+					<div class="event_box">
+						<h2 class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">Europe’s Largest Event Summit</h2>
+						<p>If you are wondering what kind of a place you are going to visit when you participate in this exciting conference, move your mouse to the point you wish to see. Take a complete tour throughout the conference area. See beforehand the place we are going to host you.</p>
+						<p>It’s not just Europe’s largest companies that will be at Event Summit, but over 7,000 CEOs from companies of all sizes and industries. Where will your company be?</p>
+						<a href="#">Download exhibitor Overview</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- event section end -->
+	<!-- pertner section start -->
+	<section id="pertners" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center">
+					<div class="sponsor_title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+						<h2>Current & Past Sponsors</h2>
+					</div>
+
+				</div>
+			</div>
+			<div class="row justify-content-center" >
+				<div class="col-md-10 justify-content-center">
+					<div class="all_sponsors justify-content-center">
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-1.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-2.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-3.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-4.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-5.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-6.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-7.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-8.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-9.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-10.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-11.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-12.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-13.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-14.png" alt="">
+						</div>
+						<div class="sponsor_Div">
+							<img src="images/sponsor/sponsore-15.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- pertner section end -->
+	<!-- customer section start -->
+	<section id="customer_event" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center">
+					<div class="customer_box">
+						<h2 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">Meet Your Next Customer</h2>
+						<p>It’s not just Europe’s largest companies that will be at Event Summit, but over 7,000 CEOs from companies of all sizes and industries. Where will your company be?.</p>
+						<a href="#">Get partnership dock</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- customer section start -->
+	<!-- conference agenda start-->
+	<section id="conferenc" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="conference_head text-center">
+						<h2>Conference agenda</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-3 p-0">
+						<div class="time_seadule wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+							<p class="pera1">8:30 Pm</p>
+							<p class="pera2">8:30pm-9:00pm</p>
+						</div>
+					</div>
+					<div class="col-md-9 p-0">
+						<div class="sedule_dettails wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="1s">
+							<div class="border_circle"><span></span></div>
+							<h4>Celebratory Reception</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, accusantium illo velit. Magnam temporibus laboriosam libero mollitia voluptatem modi nihil!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-3 p-0">
+						<div class="time_seadule wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+							<p class="pera1">8:30 Pm</p>
+							<p class="pera2">8:30pm-9:00pm</p>
+						</div>
+					</div>
+					<div class="col-md-9 p-0">
+						<div class="sedule_dettails wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="1s">
+							<div class="border_circle"><span></span></div>
+							<h4>Celebratory Reception</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, accusantium illo velit. Magnam temporibus laboriosam libero mollitia voluptatem modi nihil!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-3 p-0">
+						<div class="time_seadule wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+							<p class="pera1">8:30 Pm</p>
+							<p class="pera2">8:30pm-9:00pm</p>
+						</div>
+					</div>
+					<div class="col-md-9 p-0">
+						<div class="sedule_dettails wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="1s">
+							<div class="border_circle"><span></span></div>
+							<h4>Celebratory Reception</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, accusantium illo velit. Magnam temporibus laboriosam libero mollitia voluptatem modi nihil!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- conference agenda end-->
+	<!-- owl carousel start -->
+	<section id="owl_carousel_recent" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="recent_title text-center">
+						<h2 class="wow rollIn" data-wow-duration="1s" data-wow-delay="1s">RECENT POSTS</h2>
+					</div>
+					<!-- owl carousel -->
+					<div class="owl-carousel owl-theme">
+						<!-- single skill box start-->
+						<div class="post wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+							<img src="images/square-item.jpeg" alt="" class="img-fluid">
+							<h6>Single image post title here</h6>
+							<p class="date">july 4, 2020 | 12 comments</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, cumque!</p>
+							<a href="#">Read more <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+								<path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+							</svg></a>
+						</div>
+						<!-- single skill box end-->
+						<!-- single skill box start-->
+						<div class="post wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+							<img src="images/square-item.jpeg" alt="" class="img-fluid">
+							<h6>Single image post title here</h6>
+							<p class="date">july 4, 2020 | 12 comments</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, cumque!</p>
+							<a href="#">Read more <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+								<path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+							</svg></a>
+						</div>
+						<!-- single skill box end-->
+						<!-- single skill box start-->
+						<div class="post wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+							<img src="images/square-item.jpeg" alt="" class="img-fluid">
+							<h6>Single image post title here</h6>
+							<p class="date">july 4, 2020 | 12 comments</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, cumque!</p>
+							<a href="#">Read more <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+								<path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+							</svg></a>
+						</div>
+						<!-- single skill box end-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- owl carousel end -->
+	<!-- asees event start -->
+	<section id="asees_event" class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 ">
+					<div class="asees_event_box">
+						<h4 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">2020 Asees Event</h4>
+						<address class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">10178 Berlin, Germany</address>
+						<p class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">+49 30 123 45678</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- asees event end -->
+	<!-- footer start -->
+	<footer  id="register">
+		<div class="main_footer text-center section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="foot_head">
+							<img src="images/brand.png" alt=""><br>
+							<p>Subscribe to our Newsletter</p><br>
+							<form class="form_group">
+								<input type="email">
+								<input type="submit" value="Done">
+							</form>
+						</div>
+						<div class="s_icon text-center">
+							<ul>
+								<li>
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-github"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-google-plus"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-windows"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-apple"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-dribbble"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-skype"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="end_t text-center">
+						<p>@Prodip Udoy</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- top to bottom -->
+	<a  href="#main_hero_area" class="btn back-to-top" role="button" id="top-button" title="Home"><i class="fas fa-angle-up"></i></a>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- ==custom js== -->
+
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+
+</html>

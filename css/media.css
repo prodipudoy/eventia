@@ -1,0 +1,237 @@
+ /*Extra small devices (portrait phones, less than 576px)*/
+ @media (max-width: 575.98px) { 
+ 	.socialICon {
+ 		margin-top: -55%;
+ 		margin-left: 32%;
+ 		position: absolute;
+ 	}
+ 	.sponsor_Div {
+        width: 30%;
+        float: left;
+        display: block;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 75px;
+        align-items: center;
+    }
+    .sponsor_Div img{
+       width: 60%;
+       height: auto;
+   }
+   .guest_info {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.asees_event_box{
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #F71111, #FF731C);
+    padding: 20px 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.s_icon {
+    margin-left: 15%;
+}
+.s_icon ul li {
+    float: left;
+    margin-left: 5px;
+}
+.time_seadule .pera1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 8%;
+    }
+    .time_seadule .pera2 {
+    text-align: right;
+    font-size: 12px;
+    color: red;
+    margin-right: 10%;
+}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .sponsor_Div {
+    width: 30%;
+    float: left;
+    display: block;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 75px;
+    align-items: center;
+}
+.sponsor_Div img{
+	width: 60%;
+	height: auto;
+}
+.socialICon {
+    margin-top: -55%;
+    margin-left: 23%;
+    position: absolute;
+}
+.asees_event_box{
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #F71111, #FF731C);
+    padding: 20px 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.s_icon {
+    margin-left: 27%;
+}
+.s_icon ul li {
+    float: left;
+    margin-left: 5px;
+}
+.time_seadule .pera1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 10%;
+}
+.time_seadule .pera2 {
+    text-align: right;
+    font-size: 12px;
+    color: red;
+    margin-right: 10%;
+}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .fixed-top {
+     right: 16%;
+     left: 16%;
+ }
+ .sponsor_Div{
+    width: 20%;
+    float: left;
+    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.sponsor_Div img{
+	width: 60%;
+	height: auto;
+}
+.asees_event_box{
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #F71111, #FF731C);
+    padding: 20px 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.s_icon {
+    margin-left: 15%;
+}
+.s_icon ul li{
+    float: left;
+    margin-left: 20px;
+}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.fixed-top {
+    right: 11%;
+    left: 3%;
+}
+ .sponsor_Div{
+    width: 20%;
+    float: left;
+    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.sponsor_Div img{
+	width: 60%;
+	height: auto;
+}
+.socialICon {
+    margin-top: -55%;
+    margin-left: 23%;
+    position: absolute;
+}
+.asees_event_box{
+    margin-left: 70%;
+    background-image: linear-gradient(to right, #F71111, #FF731C);
+    padding: 20px 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.s_icon {
+    margin-left: 30%;
+}
+.s_icon ul li{
+    float: left;
+    margin-left: 20px;
+}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+.fixed-top {
+    right: 7%;
+    left: 8%;
+}
+ .sponsor_Div{
+    width: 20%;
+    float: left;
+    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.sponsor_Div img{
+	width: 60%;
+	height: auto;
+}
+.socialICon {
+    margin-top: -55%;
+    margin-left: 23%;
+    position: absolute;
+}
+.asees_event_box{
+    margin-left: 70%;
+    background-image: linear-gradient(to right, #F71111, #FF731C);
+    padding: 20px 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    
+
+}
+.s_icon {
+    margin-left: 30%;
+}
+.s_icon ul li{
+    float: left;
+    margin-left: 20px;
+}
+}
